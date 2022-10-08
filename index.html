@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermometer by SR</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            background-color: rgb(34, 50, 83);
+        }
+        .main{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0rem 1rem;
+            gap: 4rem;
+        }
+        #thermo{
+            text-transform: uppercase;
+            font-size: 4rem;
+            color: #fff;
+        }
+        #mynameis{
+            font-size: 3rem;
+            color: #fff;
+        }
+        
+        .thermometer{
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            color: #fff;
+            font-size: 8rem;
+            /* background-color: #fff; */
+        }
+
+        @media screen and (max-width:677px)
+        {
+            .main{
+                gap: 2rem;
+            }
+        }
+
+        @media screen and (max-width:640px)
+        {
+            .main{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="textleft">
+            <h1 id="mynameis">My Current Status</h1><br>
+            <h1 id="thermo">0%</h1>
+        </div>
+        <div class="thermometer">
+            <span id="thermoico" class="fa"></span>
+        </div>
+    </div>
+    
+
+    <script src="scripts.js"></script>
+    <script src="https://kit.fontawesome.com/e6e5ed6bdd.js" crossorigin="anonymous"></script>
+</body>
+</html>
